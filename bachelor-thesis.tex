@@ -1,0 +1,60 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[width=150mm,top=30mm,bottom=30mm]{geometry}
+\usepackage[style=apa,sorting=nyt]{biblatex}
+\addbibresource{references.bib}
+\usepackage{microtype}
+\interfootnotelinepenalty=10000
+\usepackage[bottom]{footmisc}
+\usepackage[section]{placeins}
+\usepackage{url}
+\usepackage{subfig}
+\usepackage{booktabs}
+\usepackage[main=english,german]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{csquotes}
+\usepackage{array}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+
+\usepackage{url}
+
+\usepackage{setspace}
+\doublespacing
+
+\begin{document}
+\input{title-ba-thesis}
+\thispagestyle{empty}
+
+\pagebreak
+
+\renewcommand*\contentsname{Summary}
+\tableofcontents
+\thispagestyle{empty}
+\pagebreak
+\listoftables
+\thispagestyle{empty}
+\pagebreak
+\listoffigures
+\thispagestyle{empty}
+
+\pagebreak
+
+\pagenumbering{arabic}
+% List of chapters goes here
+% \section{Introduction}
+% \input{chapters/introduction}
+
+\pagebreak
+
+\appendix
+
+\section{References}
+\printbibliography[heading=none]
+
+\pagebreak[4]
+
+\section{Appendix}
+\input{chapters/appendix}
+
+
+\end{document}

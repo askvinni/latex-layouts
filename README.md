@@ -1,0 +1,1 @@
+For easier writing of pretty PDFs. Currently only the layout used in my bachelor's thesis is in, more will be added as they are needed for personal projects.
